@@ -60,7 +60,10 @@ constants  ex cons routeNames i HOMEhome USLUGEusluge KONTAKTIkonktakti
 
 kreiram pages direktorij u src  i u njemu Home.jsx gdje upišem export default function Home 
 return i unutar diamonda h1 i div za sliku
-kreiram Usluge pregled jsx isto u pages i pišem export def...
+kreiram Usluge pregled jsx isto u pages i pišem export def...kreiram usluge u src kao direktorij sa fileom UslugePregled
+
+U App jsx dodajem unuatr containera routes i route  path obrišem jednostruke upišem route names.Home pod vitičastim i importam sa ctrl backspase sve te komponente i pazim da je obavio
+
 
 
 
