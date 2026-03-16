@@ -54,6 +54,14 @@ učitaj u appjsx tu promjenu tako da mjesto hello world upises Izbornik
 ctrl backspace na k od izbonik da importa
 mora pisati Izbornik razmak />  onda u izborniku radiš promjene naziv itd
 
+odlazimo u main nakon npm install react-router ,strict Mode iznad App  BrowseRouter  i import sa ctrl backspace te dodati taj app u njega
+
+constants  ex cons routeNames i HOMEhome USLUGEusluge KONTAKTIkonktakti
+
+kreiram pages direktorij u src  i u njemu Home.jsx gdje upišem export default function Home 
+return i unutar diamonda h1 i div za sliku
+kreiram Usluge pregled jsx isto u pages i pišem export def...
+
 
 
 

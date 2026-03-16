@@ -8,7 +8,10 @@ function App() {
   return (
     <Container>
       <Izbornik />
-      
+
+      <hr />
+
+      &copy; Marija | Edunova | III.2026.
     </Container>
   )
 }

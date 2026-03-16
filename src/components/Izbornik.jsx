@@ -11,7 +11,7 @@ export default function Izbornik() {
                     <Nav className="me-auto">
                         <Nav.Link href="#home">Početna</Nav.Link>
                         
-                        <NavDropdown title="Program" id="basic-nav-dropdown">
+                        <NavDropdown title="Ponuda" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Usluge</NavDropdown.Item>
                            
                             <NavDropdown.Item href="#action/3.3">Kontakt</NavDropdown.Item>
