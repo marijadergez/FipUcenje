@@ -5,6 +5,7 @@ import Izbornik from './components/Izbornik'
 import { Route, Routes } from 'react-router-dom'
 import { RouteNames } from './constants'
 import UslugePregled from './usluge/UslugePregled'
+import Home from './pages/Home'
 
 
 
@@ -14,7 +15,7 @@ function App() {
     <Container>
       <Izbornik />
       <Routes>
-          <Route path={RouteNames.HOME} element={<h1>Početna</h1>}  />
+          <Route path={RouteNames.HOME} element={<Home/>}  />
           <Route path={RouteNames.KONTAKT} element={<h1>Kontakt</h1>}  />
           <Route path={RouteNames.USLUGE} element={<UslugePregled />}  />
 
