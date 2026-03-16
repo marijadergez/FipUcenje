@@ -16,6 +16,13 @@ The React Compiler is not enabled on this template because of its impact on dev 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 
+POTREBNE ZAVISNOSTI:
+U terminalu nakon što ste zaustavili aplikaciju (ctrl+c) izvesti:
+
+npm install react-bootstrap bootstrap
+npm install react-router-dom
+
+
 
 Ovo je vježbanje kroz gledanje snimke predavanja
 od 09.03. do 12.03. predavanja pon uto sri četv je create
@@ -34,6 +41,9 @@ import './App.css'   tu je onda pročišćena
 zatim u terminalu npm install zatim npm run dev
 
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+container u app.jsx  hello edunova
+  
 
 
 
