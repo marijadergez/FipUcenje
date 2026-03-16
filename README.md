@@ -50,8 +50,9 @@ create components directora sa file Izbornik veliko slovo uvijek
 izbornik jsx:
 kopiramo bootstrap nav bar ili drugu komponentu i zaljepimo unutar containera te ctrl backspace enter da ih importa
 učitaj u appjsx tu promjenu tako da mjesto hello world upises Izbornik
-ctrl backspace na k od izbonikla da importa
-mora pisati Izbornik razmak />
+ctrl backspace na k od izbonik da importa
+mora pisati Izbornik razmak />  onda u izborniku radiš promjene naziv itd
+
 
 
 
