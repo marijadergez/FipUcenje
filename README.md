@@ -1,0 +1,43 @@
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+Ovo je vježbanje kroz gledanje snimke predavanja
+od 09.03. do 12.03. predavanja pon uto sri četv je create
+
+folder smo otvorili nakon npm instal vite@latest. nazvalki projekt,react,javascript i no za npm install
+
+otvorili smo cmd mjesto powershell koji smo obrisali, obrisali smo react.svg i vite.svg iz assets i public, Obrisali smo index.css  i u main.jsx import od tog css
+
+app.jsx   obrišem sve unutar <> </> i upisem hello edunoiva
+
+obrisemo   const [count, setCount] = useState(0)
+
+i sve importe osim 
+import './App.css'   tu je onda pročišćena
+
+zatim u terminalu npm install zatim npm run dev
+
+
+
+
+
+
+
+
+
