@@ -12,7 +12,12 @@ function App() {
     <Container>
       <Izbornik />
       <Routes>
-        
+        <Route path={RouteNames.HOME} element={<h1>ne rad i mi routa Home bez ovog txta {RouteNames.HOME} </h1>}  />
+        <Route path={RouteNames.UslugePregled} element={<UslugePregled />}  />
+
+     
+
+
       </Routes>
       <hr />
 
