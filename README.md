@@ -27,7 +27,7 @@ npm install react-router-dom
 Ovo je vježbanje kroz gledanje snimke predavanja
 od 09.03. do 12.03. predavanja pon uto sri četv je create
 
-folder smo otvorili nakon npm instal vite@latest. nazvalki projekt,react,javascript i no za npm install
+folder smo otvorili nakon npm instal vite@latest. nazvalki projekt,react,javascript i no za npm install  FipUcenje U FD2
 
 otvorili smo cmd mjesto powershell koji smo obrisali, obrisali smo react.svg i vite.svg iz assets i public, Obrisali smo index.css  i u main.jsx import od tog css
 
@@ -46,6 +46,7 @@ container u app.jsx  hello edunova
   
 u src create constants.js file, export const IME_APLIKACIJE= ''
 create components directora sa file Izbornik veliko slovo uvijek
+u izborniku jsx dodati ime aplikacije i import u vitičastim mora se pojaviti ctrl backspace
 
 izbornik jsx:
 kopiramo bootstrap nav bar ili drugu komponentu i zaljepimo unutar containera te ctrl backspace enter da ih importa
