@@ -44,6 +44,15 @@ zatim u terminalu npm install zatim npm run dev
 import 'bootstrap/dist/css/bootstrap.min.css'
 container u app.jsx  hello edunova
   
+u src create constants.js file, export const IME_APLIKACIJE= ''
+create components directora sa file Izbornik veliko slovo uvijek
+
+izbornik jsx:
+kopiramo bootstrap nav bar ili drugu komponentu i zaljepimo unutar containera te ctrl backspace enter da ih importa
+učitaj u appjsx tu promjenu tako da mjesto hello world upises Izbornik
+ctrl backspace na k od izbonikla da importa
+mora pisati Izbornik razmak />
+
 
 
 
