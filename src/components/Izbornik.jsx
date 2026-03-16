@@ -28,6 +28,7 @@ export default function Izbornik() {
                         
                         <NavDropdown title="Ponuda" id="basic-nav-dropdown">
                             <NavDropdown.Item 
+                            
                             onClick={()=>navigate(RouteNames.USLUGE)}
                             
                             >Usluge</NavDropdown.Item>
@@ -37,7 +38,10 @@ export default function Izbornik() {
                             
                             onClick={()=>navigate(RouteNames.KONTAKT)}
                             >Kontakt</NavDropdown.Item>
+
+
                             <NavDropdown.Divider />
+
                             <NavDropdown.Item href="#action/3.4">
                                 Separated link
                             </NavDropdown.Item>
