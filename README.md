@@ -103,8 +103,9 @@ potrebne zavisnosti priprema:
 potražim react icons , npm install react-icons u cmd
 u smjerpregled gdje pise aktivan ili false true, dodajem grvalidate -iz react iconica naziv, izbornik mi ponudi,</> ,on učita ctrlbackspase,mozes upisivat size,color,u vitičastim
 
+pravimo favicpon iz rect icons odaberemo win shift c da oznacimo malu ikonicu i uređujemo ju u notepadu 
 
-
+trazimo favicon na icons kopiramo ga u paintu izrezemo i ubacimo i public favicom kad extrahiramo. ovabezno u index html dodati link favicon
 
 
 
