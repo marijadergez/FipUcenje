@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import Izbornik from './components/Izbornik'
 import { Route, Routes } from 'react-router-dom'
 import { RouteNames } from './constants'
-import UslugePregled from './usluge/UslugePregled'
+import UslugePregled from './pages/usluge/UslugePregled'
 import Home from './pages/Home'
 
 
