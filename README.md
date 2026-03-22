@@ -80,10 +80,44 @@ u direktoriju smjerovi  novi file smjer.service    (CRUD)
 async function get return import
 servise zatvaramo lokalno a prema van export default get
 
-u pages smjer pregled   export default funct smjer pregled return prije returna hook use navigate useeffect
+u pages smjer pregled   export default funct smjer pregled  return prije returna hook use navigate useeffect
 const smjerovi setsmjerovi  usestate
 to je samo kontener gdje ih pohranjujem sa useeffect ga sa [] zatvori a izmedju vitičastih pozivamo iz asinkrone funkcije a ne možemo iz await bez asinc ali mos sam asinc 
-ucitaj smjerove asinc functon await smjerservice 
+ucitaj smjerove asinc functon await smjerservice get then arrow set smjerovi odgovor.data
+return
+ i dalje u smjer pregled (smjerservice smjer)
+zavrtit smjer ispod return smjerovi && smjerovi map smjerarow korištenje ol i li smjer naziv da vidiš dalli radi   mjesto ol i li ucitamo -table bootstrap, -thead u njega -tr pa -th u kojem je naziv smjer kontakt itd,  
+ ide naziv a to će doći iz sifre 1 iz smjerpodaci gdje se nalaze ti atributi znaci prva kolona bi bila programi tj usluge mjesto smjer,ugl sve ide u th
+
+ onda u thead ide tbody u koje idu objekti nećemo stavljat dva ili tri td nego odmah vitičaste objet  usluge && usluge.map arow otvoreni tr u njega tabledata (td) i stavljamo opet vitičaste usluge.naziv malim slovom jer je naziv atributa iz gdje je i sifra 1
+sljedeci td je cijena,datum,true false...i ostqaviš dvije prazne ćelije td
+
+
+potrebne zavisnosti priprema :npm install react-number-format nakon cmd instalacije vidis u package json zavisnosti
+
+smjer pregled gdje je cijena napravim prored izmedju dva td i format je zavisnost Nume i daje mi izbornik  da odaberem</>  ide value smjer cijena dislay tipe '' opet izbornik txt pa tousand separator '', decimal separator'',supix, decimascale,fixdecimalscale za 10,99  i copy pastas ako trebas još
+
+
+npm repo za number ili slične komponente na webu
+potrebne zavisnosti priprema:
+potražim react icons , npm install react-icons u cmd
+u smjerpregled gdje pise aktivan ili false true, dodajem grvalidate -iz react iconica naziv, izbornik mi ponudi,</> ,on učita ctrlbackspase,mozes upisivat size,color,u vitičastim
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
