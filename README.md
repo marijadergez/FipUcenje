@@ -112,6 +112,52 @@ trazimo favicon na icons kopiramo ga u paintu izrezemo i ubacimo i public favico
 
 
 
+novi smjer
+prvo kreiram ime rute u constants (home smjerovi ,smjerovi_novi) kroz smjerovi kroz novi 
+
+u pages u smjerovi napravim datoteku file smjernovi.jsx
+u to export default func smjernovi  return diamond unos novog smjera kapo pripremu
+u app jsx dodam novu rutu path SMJEROVI_NOVI
+import se mora pojavitii objekt posto treba postojat u izborniku
+u smjer preghled jsx dodajem link za dodavanje novog smjera, linku dodajem route names kao objekt
+trebao bi biti ugnježđen ispod nav bara 
+
+smjer novi jsx export def func smjernovi u diamondu ubacim neki h 
+ ispod ubacim form iz react bootstrapa da se dogodi import unutar form ide formgroup controlID i unutar toga formgrup stavim form label ono štpo čovjek vidi ide unutra  a nakon label ide formcontrol i nema djecu kojem definiramo svojstva i required za da se mora upisivati da nedaje covjeku dalje dok ne upise u formu unossnog polja  nesto 
+ form control text required
+ type number može sa step za kursor dodavanja  
+ cijena bi bila isto number ali step je 0.01 zbog decimala
+ preglednici na hrv jeziku stave zarez a eng točku
+
+ za date je datumpokretanja controlid
+
+ type je date name je datumPokretanja
+ u  polju ce biti kalendar za izbor
+
+ a za bulean je checkbox aktivan i check iname i label je aktivan
+
+ iza toga ide row i unutra col i importaj iz izbornika iz react bootstrapa
+ odustani gumb se pojavljuje ,još jedan takav gumb za odustani mjesto teksta za gumb pišem unutar col link react bootstrap iz izbornika i unutar linka tek pišem odustani tekst koji se vidi na gumbu korisniku
+
+
+ unutar row elementa uguram class name margin top mt-4 da ga odmaknem od table 
+
+ taj link ima route names iz constants route
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
