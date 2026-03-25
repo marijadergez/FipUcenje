@@ -3,8 +3,10 @@ import UslugeService from "../../services/usluge/UslugeService"
 import { Table } from "react-bootstrap"
 import { NumericFormat } from "react-number-format"
 
-import { GrValidate } from "react-icons/gr"
+import { GrAdd, GrValidate } from "react-icons/gr"
 import FormatDatuma from "../../components/FormatDatuma"
+import { Link } from "react-router-dom"
+import { RouteNames } from "../../constants"
 
 
 
@@ -27,6 +29,12 @@ export default function UslugePregled() {
 
     return (
         <>
+
+            <Link to={RouteNames.USLUGE_NOVI}
+            className="btn btn-success w-100 my-3">
+                <GrAdd/> Dodaj novu uslugu
+            </Link>
+
             <Table>
 
                 <thead>
@@ -41,7 +49,7 @@ export default function UslugePregled() {
                 </thead>
                 <tbody>
                     {usluge && usluge.map((usluge) => (
-                        <tr>
+                        <tr key={usluge.sifra}>
                             <td>{usluge.naziv}</td>
                             
                             <td>
