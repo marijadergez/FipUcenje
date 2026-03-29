@@ -13,6 +13,8 @@ import { RouteNames } from "../../constants"
 
 export default function UslugePregled() {
 
+    const navigate = useNavigate()
+
     const [usluge, setUsluge] = useState([])
 
     useEffect(() => {
@@ -35,7 +37,7 @@ export default function UslugePregled() {
                 <GrAdd/> Dodaj novu uslugu
             </Link>
 
-            <Table>
+            <Table striped bordered hover>
 
                 <thead>
                     <tr>
@@ -65,16 +67,23 @@ export default function UslugePregled() {
 
                             </td>
                            
-                            <td>
+                            <td style={{textAlign: 'center'}}>
                                 <GrValidate
                                     size={25}
                                     color={usluge.aktivan ? 'green' : 'red'}
                                 />
                             </td>
-
                              <td>
-                                <FormatDatuma datum={usluge.datumPokretanja} />
-                            </td>
+                            <Button onClick={()=>{navigate(`/usluge/${usluge.sifra}`)}}>
+                                Promjeni
+                            </Button>
+                            &nbsp;&nbsp;
+                            <Button variant="danger" onClick={()=>{obrisi(usluge.sifra)}}>
+                                Obriši
+                            </Button>
+                        </td>
+
+                             
                             <td></td>
                         </tr>
                     ))}
