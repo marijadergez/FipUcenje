@@ -3,12 +3,12 @@ import { usluge } from "./UslugePodaci";
 
 
 async function get() {
-    return {data: usluge}
+    return {data: [...usluge]}
     
 }
 
 async function getBySifra(sifra) {
-    return {data: usluge.find(s => s.sifra === parseInt(sifra))}
+    return {data: [...usluge].find(s => s.sifra === parseInt(sifra))}
 }
 
 
