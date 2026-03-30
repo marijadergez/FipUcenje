@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import UslugeService from "../../services/usluge/UslugeService";
 import { Button, Table } from "react-bootstrap";
 import { NumericFormat } from "react-number-format";
-import { obrisi } from "../../services/usluge/UslugeService";
+
 import { GrAdd, GrValidate } from "react-icons/gr";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
