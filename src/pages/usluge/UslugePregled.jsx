@@ -1,21 +1,20 @@
-import { useEffect, useState } from "react";
-import UslugeService from "../../services/usluge/UslugeService";
-import { Button, Table } from "react-bootstrap";
-import { NumericFormat } from "react-number-format";
+import { useEffect, useState } from "react"
+import UslugeService from "../../services/usluge/UslugeService"
+import { Button, Table } from "react-bootstrap"
+import { NumericFormat } from "react-number-format"
 
-import { GrAdd, GrValidate } from "react-icons/gr";
-import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { RouteNames } from "../../constants";
+import { GrAdd, GrValidate } from "react-icons/gr"
+import FormatDatuma from "../../components/FormatDatuma"
+import { Link, useNavigate } from "react-router-dom"
+import { RouteNames } from "../../constants"
 
-    
+
 
 
 
 export default function UslugePregled() {
 
     const navigate = useNavigate()
-
     const [usluge, setUsluge] = useState([])
 
     useEffect(() => {
@@ -29,63 +28,76 @@ export default function UslugePregled() {
 
     }
 
+    async function obrisi(sifra) {
+        if(!confirm('Sigurno obrisati?')){
+            return
+        }
+        await UslugeService.obrisi(sifra)
+        ucitajUsluge()
+        
+    }
+
 
     return (
         <>
 
             <Link to={RouteNames.USLUGE_NOVI}
-            className="btn btn-success w-100 my-3">
-                <GrAdd/> Dodaj novu uslugu
+                className="btn btn-success w-100 my-3">
+                <GrAdd /> Dodaj novu uslugu
             </Link>
 
-            <Table striped bordered hover>
+            <Table hover bordered responsive>
 
                 <thead>
                     <tr>
                         <th>Naziv usluge</th>
-                        <th>Cijena </th>                     
+                        <th>Cijena </th>
                         <th>Popust</th>
-                         <th>Datum upisa</th>
-                         <th>Akcija</th>
-                         
+                        <th>Datum upisa</th>
+                        <th>Akcija</th>
+
                     </tr>
                 </thead>
                 <tbody>
-                    {usluge && usluge.map((usluge) => (
-                        <tr key={usluge.sifra}>
-                            <td>{usluge.naziv}</td>
-                            
+                    {usluge && usluge.map((usluga) => (
+                        <tr key={usluga.sifra}>
+                            <td>{usluga.naziv}</td>
+
                             <td>
                                 <NumericFormat
-                                    value={usluge.cijena}
+                                    value={usluga.cijena}
                                     displayType={'text'}
                                     thousandSeparator='.'
                                     decimalSeparator=','
                                     suffix=' €'
                                     prefix='= '
                                     decimalScale={2}
-                                    fixedDecimalScale  />
+                                    fixedDecimalScale />
 
                             </td>
-                           
-                            <td style={{textAlign: 'center'}}>
+
+                            <td>
                                 <GrValidate
                                     size={25}
-                                    color={usluge.aktivan ? 'green' : 'red'}
+                                    color={usluga.popust ? 'green' : 'red'}
                                 />
                             </td>
-                             <td>
-                            <Button onClick={()=>{navigate(`/usluge/${usluge.sifra}`)}}>
-                                Promjeni
-                            </Button>
-                            &nbsp;&nbsp;
-                            <Button variant="danger" onClick={()=>{obrisi(usluge.sifra)}}>
-                                Obriši
-                            </Button>
-                        </td>
 
-                             
-                            <td></td>
+                            <td>
+                                <FormatDatuma datum={usluga.datumPokretanja} />
+                            </td>
+                            <td>
+
+                                <Button onClick={()=>{navigate(`/usluge/${usluga.sifra}`)}}>
+                                    Promjeni
+                                </Button>
+                                        &nbsp;&nbsp;
+
+                                <Button variant="danger" onClick={()=>{obrisi(usluga.sifra)}}> 
+                                    Obriši
+                                </Button>
+                            </td>
+
                         </tr>
                     ))}
                 </tbody>
