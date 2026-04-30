@@ -1,11 +1,6 @@
 body{
   background-color: bisque;
 }
-
-.navbar{
-  background-color: rgb(95, 87, 87);
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
+.App {
+  text-align: center;
 }
