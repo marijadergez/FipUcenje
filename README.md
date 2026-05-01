@@ -27,7 +27,7 @@ npm install react-router-dom
 Ovo je vježbanje kroz gledanje snimke predavanja
 od 09.03. do 12.03. predavanja pon uto sri četv je create
 
-folder smo otvorili nakon npm instal vite@latest. nazvalki projekt,react,javascript i no za npm install  FipUcenje U FD2
+folder smo otvorili nakon npm instal create vite@latest. nazvalki projekt,react,javascript i no za npm install  FipUcenje U FD2
 
 otvorili smo cmd mjesto powershell koji smo obrisali, obrisali smo react.svg i vite.svg iz assets i public, Obrisali smo index.css  i u main.jsx import od tog css
 
